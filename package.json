@@ -1,0 +1,23 @@
+{
+  "name": "eslint-config-labnoratory",
+  "version": "1.0.1",
+  "description": "eslint config for backend and frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blabno/eslint-config-labnoratory.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blabno/eslint-config-labnoratory/issues"
+  },
+  "homepage": "https://github.com/blabno/eslint-config-labnoratory#readme"
+}
