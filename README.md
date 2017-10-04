@@ -9,16 +9,16 @@ This is eslint rules for frontend and backend apps.
 npm install --save-dev -E eslint-config-labnoratory
 ```
 
-**FRONTEND RULES**
+**ECMASCRIPT 5 RULES**
 
 After install npm package please create `.eslintrc.json` and extend rules
 ```
-extends: "labnoratory/frontend"
+extends: "labnoratory/configuration/es5"
 ```
 
-**BACKEND RULES**
+**ECMASCRIPT 6 RULES**
 
 After install npm package please create `.eslintrc.json` and extend rules
 ```
-extends: "labnoratory/backend"
+extends: "labnoratory/configuration/es6"
 ```
