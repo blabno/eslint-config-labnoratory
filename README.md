@@ -13,12 +13,12 @@ npm install --save-dev -E eslint-config-labnoratory
 
 After install npm package please create `.eslintrc.json` and extend rules
 ```
-extends: "labnoratory/configuration/es5"
+extends: "labnoratory/configurations/es5"
 ```
 
 **ECMASCRIPT 6 RULES**
 
 After install npm package please create `.eslintrc.json` and extend rules
 ```
-extends: "labnoratory/configuration/es6"
+extends: "labnoratory/configurations/es6"
 ```
