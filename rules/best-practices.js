@@ -12,7 +12,7 @@ module.exports = {
         // specify the maximum cyclomatic complexity allowed in a program
         'complexity': [0, 11],
         // require return statements to either always or never specify values
-        'consistent-return': 0,
+        'consistent-return': 2,
         // specify curly brace conventions for all control statements
         'curly': [2, 'multi-line'],
         // require default case in switch statements
@@ -20,7 +20,7 @@ module.exports = {
         // encourages use of dot notation whenever possible
         'dot-notation': [2, {'allowKeywords': true}],
         // enforces consistent newlines before or after dots
-        'dot-location': 0,
+        'dot-location': [2, "property"],
         // require the use of === and !==
         'eqeqeq': [2,'always',{ null: 'ignore'}],
         // make sure for-in loops have an if statement
@@ -90,7 +90,7 @@ module.exports = {
         // rule: http://eslint.org/docs/rules/no-param-reassign.html
         'no-param-reassign': [2, {'props': false}],
         // disallow use of process.env
-        'no-process-env': 0,
+        'no-process-env': 2,
         // disallow usage of __proto__ property
         'no-proto': 2,
         // disallow declaring the same variable more then once
@@ -109,7 +109,7 @@ module.exports = {
         // http://eslint.org/docs/rules/no-unmodified-loop-condition
         'no-unmodified-loop-condition': 0,
         // allow usage of expressions in statement position, needed for expect and should
-        'no-unused-expressions': 0,
+        'no-unused-expressions': 2,
         // disallow unused labels
         // http://eslint.org/docs/rules/no-unused-labels
         'no-unused-labels': 2,
@@ -124,7 +124,7 @@ module.exports = {
         // require use of the second argument for parseInt()
         'radix': 2,
         // requires to declare all vars on top of their containing scope
-        'vars-on-top': 0,
+        'vars-on-top': 2,
         // require immediate function invocation to be wrapped in parentheses
         // http://eslint.org/docs/rules/wrap-iife.html
         'wrap-iife': [2, 'inside'],

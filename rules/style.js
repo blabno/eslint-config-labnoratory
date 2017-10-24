@@ -5,7 +5,7 @@ module.exports = {
         // enforce spacing inside array brackets
         'array-bracket-spacing': [2, 'never'],
         // enforce one true brace style
-        'brace-style': [0],
+        'brace-style': [2, "1tbs"],
         // require camel case names
         'camelcase': [2, { 'properties': 'never' }],
         // enforce spacing before and after comma
@@ -19,16 +19,16 @@ module.exports = {
         // enforce newline at the end of file, with no multiple empty lines
         'eol-last': 2,
         // require function expressions to have a name
-        'func-names': [2,'never'],
+        'func-names': [2,'as-needed'],
         // enforces use of function declarations or expressions
-        'func-style': 0,
+        'func-style': [2, "declaration"],
         // this option enforces minimum and maximum identifier lengths
         // (variable names, property names etc.)
         'id-length': 0,
         // this option sets a specific tab width for your code
         // https://github.com/eslint/eslint/blob/master/docs/rules/indent.md
-        'indent': [2,4, {"ArrayExpression": "first", "CallExpression" : {"arguments" : 2}, "FunctionExpression": {"parameters": "first"},
-            "MemberExpression": 2, "SwitchCase" : 1, "FunctionDeclaration" : {"parameters" : "first"}}],
+        'indent': [2,2, {"ArrayExpression": "first", "CallExpression" : {"arguments" : 1}, "FunctionExpression": {"parameters": "first"},
+            "MemberExpression": 1, "SwitchCase" : 1, "FunctionDeclaration" : {"parameters" : "first"}}],
         // specify whether double or single quotes should be used in JSX attributes
         // http://eslint.org/docs/rules/jsx-quotes
         'jsx-quotes': [2, 'prefer-double'],
@@ -52,7 +52,8 @@ module.exports = {
         // https://github.com/eslint/eslint/blob/master/docs/rules/max-len.md
         'max-len': [2, 160, 2, {
             'ignoreUrls': true,
-            'ignoreComments': false
+            'ignoreComments': false,
+            "ignoreTemplateLiterals": true
         }],
         // specify the maximum depth callbacks can be nested
         'max-nested-callbacks': 0,
@@ -73,7 +74,7 @@ module.exports = {
         // disallow comments inline after code
         'no-inline-comments': 0,
         // disallow if as the only statement in an else block
-        'no-lonely-if': 0,
+        'no-lonely-if': 2,
         // disallow mixed spaces and tabs for indentation
         'no-mixed-spaces-and-tabs': 2,
         // disallow multiple empty lines and only one newline at the end
@@ -98,7 +99,7 @@ module.exports = {
         // http://eslint.org/docs/rules/no-whitespace-before-property
         'no-whitespace-before-property': 2,
         // require padding inside curly braces
-        'object-curly-spacing': [2, 'never'],
+        'object-curly-spacing': [2, 'always'],
         // allow just one var statement per function
         'one-var': [2, 'never'],
         // require a newline around variable declaration
@@ -112,7 +113,7 @@ module.exports = {
         'padded-blocks': [2, 'never'],
         // require quotes around object literal property names
         // http://eslint.org/docs/rules/quote-props.html
-        'quote-props': [2, 'as-needed', { 'keywords': false, 'unnecessary': true, 'numbers': false }],
+        'quote-props': 0,
         // specify whether double or single quotes should be used
         'quotes': [2, 'single', 'avoid-escape'],
         // require identifiers to match the provided regular expression

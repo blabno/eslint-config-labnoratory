@@ -5,7 +5,7 @@ module.exports = {
         // disallow assignment in conditional expressions
         'no-cond-assign': [2, 'always'],
         // disallow use of console
-        'no-console': 0,
+        'no-console': [2, { "allow" : ["debug", "info", "warn", "error"]}],
         // disallow use of constant expressions in conditions
         'no-constant-condition': 1,
         // disallow control characters in regular expressions
@@ -55,6 +55,6 @@ module.exports = {
         // ensure that the results of typeof are compared against a valid string
         'valid-typeof': 2,
         // Avoid code that looks like two expressions but is actually one
-        'no-unexpected-multiline': 0
+        'no-unexpected-multiline': 2
     }
 };

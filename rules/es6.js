@@ -16,7 +16,7 @@ module.exports = {
     'rules': {
         // enforces no braces where they can be omitted
         // http://eslint.org/docs/rules/arrow-body-style
-        'arrow-body-style': [2,"as-needed"],
+        'arrow-body-style': 0,
         // require parens in arrow function arguments
         'arrow-parens': [2,"as-needed"],
         // require space before/after arrow function's arrow
@@ -30,7 +30,7 @@ module.exports = {
         'no-class-assign': 0,
         // disallow arrow functions where they could be confused with comparisons
         // http://eslint.org/docs/rules/no-confusing-arrow
-        'no-confusing-arrow': 0,
+        'no-confusing-arrow': [2, {"allowParens": true}],
         // disallow modifying variables that are declared using const
         'no-const-assign': 2,
         // disallow symbol constructor
