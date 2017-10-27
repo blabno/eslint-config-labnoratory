@@ -1,12 +1,14 @@
 'use strict';
 
 module.exports = {
+  env: {
+    node: true
+  },
   extends: [
-    'labnoratory/configurations/es5',
     'labnoratory/rules/es6'
   ],
   parserOptions: {
-    ecmaVersion: 6,
     sourceType: 'module'
   }
 };
+

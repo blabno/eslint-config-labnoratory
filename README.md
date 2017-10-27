@@ -1,24 +1,35 @@
-**ESLINT-CONFIG-LABNORATORY**
+# Labnoratory eslint config
 
-This is eslint rules for frontend and backend apps.
+This is our eslint configuration for frontend and backend apps.
 
 
-**INSTALLATION**
+## INSTALLATION
 
-```
-npm install --save-dev -E eslint-config-labnoratory
-```
+    npm install -DE eslint-config-labnoratory
 
-**ECMASCRIPT 5 RULES**
+## Browser with EcmaScript 5
 
-After install npm package please create `.eslintrc.json` and extend rules
-```
-extends: "labnoratory/configurations/es5"
-```
+After installing npm package please create `.eslintrc`:
 
-**ECMASCRIPT 6 RULES**
+    {
+      "env": {
+        "browser": true
+      },
+      "extends": "labnoratory/configurations/es5",
+      "globals": {
+        "document": true,
+        "window": true
+      }
+    }
 
-After install npm package please create `.eslintrc.json` and extend rules
-```
-extends: "labnoratory/configurations/es6"
-```
+## Node with EcmaScript 6
+
+After installing npm package please create `.eslintrc`:
+
+    {
+      "env": {
+        "node": true,
+        "es6": true
+      },
+      "extends": "labnoratory/configurations/node-es6"
+    }
