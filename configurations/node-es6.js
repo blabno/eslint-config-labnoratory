@@ -5,10 +5,7 @@ module.exports = {
     node: true
   },
   extends: [
-    'labnoratory/rules/es6'
-  ],
-  parserOptions: {
-    sourceType: 'module'
-  }
+    'labnoratory/configurations/es6'
+  ]
 };
 
