@@ -9,18 +9,5 @@ module.exports = {
     'labnoratory/rules/strict',
     'labnoratory/rules/style',
     'labnoratory/rules/variables'
-  ],
-  env: {
-    browser: true,
-    node: true,
-    amd: false,
-    mocha: true,
-    jasmine: false
-  },
-  parserOptions: {
-    sourceType: 'script',
-    ecmaFeatures: {
-      globalReturn: false
-    }
-  }
+  ]
 };

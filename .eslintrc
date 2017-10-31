@@ -2,6 +2,7 @@
   "extends": [
     "./rules/best-practices.js",
     "./rules/errors.js",
+    "./rules/es6.js",
     "./rules/legacy.js",
     "./rules/node.js",
     "./rules/strict.js",
