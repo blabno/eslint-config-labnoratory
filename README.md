@@ -33,3 +33,15 @@ After installing npm package please create `.eslintrc`:
       },
       "extends": "labnoratory/configurations/node-es6"
     }
+
+## Node with EcmaScript 2018
+
+After installing npm package please create `.eslintrc`:
+
+    {
+      "env": {
+        "node": true,
+        "es6": true
+      },
+      "extends": "labnoratory/configurations/es2018"
+    }

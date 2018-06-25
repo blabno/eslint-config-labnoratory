@@ -21,7 +21,7 @@ module.exports = {
     // require function expressions to have a name
     'func-names': [2, 'never'],
     // enforces use of function declarations or expressions
-    'func-style': [2, 'declaration'],
+    'func-style': [2, 'declaration', { allowArrowFunctions: true }],
     // this option enforces minimum and maximum identifier lengths
     // (variable names, property names etc.)
     'id-length': 0,
@@ -115,10 +115,10 @@ module.exports = {
     // require padding inside curly braces
     'object-curly-spacing': [2, 'always'],
     // allow just one var statement per function
-    'one-var': [2, 'never'],
+    'one-var': [2, { initialized: 'never' }],
     // require a newline around variable declaration
     // http://eslint.org/docs/rules/one-var-declaration-per-line
-    'one-var-declaration-per-line': [2, 'always'],
+    'one-var-declaration-per-line': [2, 'initializations'],
     // require assignment operator shorthand where possible or prohibit it entirely
     'operator-assignment': 0,
     // enforce operators to be placed before or after line breaks
